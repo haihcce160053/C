@@ -17,8 +17,10 @@ int main()
             printf("Chu vi hinh tron: %.3f\n", CV);
             printf("Dien tich hinh tron: %.3f\n", DT);
             break;
+        }else{
+            scanf("%s", clean);
         }
-        scanf("%s", clean);
+
     }
 
     return 0;
