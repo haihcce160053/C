@@ -96,12 +96,19 @@ int main()
                 scanf("%s", &clean[0]);
             }
         }
+        printf("S =");
         for(int i = 1; i <= n; i++)
         {
             tu = i;
             mau = i + 1;
+            if(i == 1){
+                printf(" %d/%d", tu, mau);
+            }else{
+                printf(" + %d/%d", tu, mau);
+            }
+
         }
-        printf("S = %d/%d = %.2f\n", tu, mau, ((float)tu/(float)mau));
+        printf(" = %d/%d = %.2f\n", tu, mau, ((float)tu/(float)mau));
         result = 0;
         break;
     case 3:
@@ -143,7 +150,7 @@ int main()
         result = 0;
         break;
     case 4:
-        printf("Cam on ban da su dung chuong trinh");
+        printf("Cam on ban da su dung chuong trinh\n");
         exit(0);
         break;
     default:
