@@ -5,7 +5,7 @@
 int main()
 {
     float r, CV, DT;
-    char clean = 'c';
+    char* clean;
 
     while(1)
     {
@@ -18,7 +18,7 @@ int main()
             printf("Dien tich hinh tron: %.3f\n", DT);
             break;
         }
-        scanf("%s", &clean);
+        scanf("%s", clean);
     }
 
     return 0;
